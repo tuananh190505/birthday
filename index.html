@@ -392,7 +392,7 @@ body {
 </head>
 <body>
 <div id="app">
-
+.
   <!-- BG scatter stars (always visible in lyric scene) -->
   <div class="bg-stars" id="bgStars"></div>
 
@@ -645,7 +645,7 @@ function initClock() {
   clockRunning = true;
   clockH = 23; clockM = 55;
   renderClock(clockH, clockM);
-  document.getElementById('clockDate').textContent = 'ngày 22 tháng 6 năm 2026';
+  document.getElementById('clockDate').textContent = 'ngày 18 tháng 5 năm 2026';
   // hide notifs
   ['n1','n2','n3'].forEach(id => {
     document.getElementById(id).classList.remove('show');
@@ -671,7 +671,7 @@ function initClock() {
     else setDigit('d1', nHH[1]);
 
     if (clockH === 0 && clockM === 0) {
-      document.getElementById('clockDate').textContent = 'ngày 23 tháng 6 năm 2026';
+      document.getElementById('clockDate').textContent = 'ngày 19 tháng 5 năm 2026';
       clearInterval(clockTick); clockRunning = false;
       // show notifications sequentially
       setTimeout(() => document.getElementById('n1').classList.add('show'), 400);
@@ -777,7 +777,7 @@ function initS6() {
   setTimeout(() => {
     hdr.classList.add('show');
     // type text char by char
-    const msg = 'Happy Birthday Mỹ Duyên 🎂';
+    const msg = 'Happy Birthday Thu Hương 🎂';
     let i = 0;
     const typeTimer = setInterval(() => {
       txt.innerHTML += msg[i] === ' ' ? '&nbsp;' : msg[i];
